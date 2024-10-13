@@ -1,0 +1,10 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use './SearchBar/index' as _SearchBar;
+@use './NotesContent/index' as _NotesContent;
+
+.notes-controller {
+  display: flex;
+  flex-direction: column;
+  gap: sharedFunction.responsive-min(24);
+}

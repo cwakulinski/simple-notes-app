@@ -1,0 +1,22 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Button/index';
+
+.empty-notes-add-note-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: sharedFunction.responsive-min(8);
+
+  font-weight: 500;
+
+  &__new-file-ico {
+    width: sharedFunction.responsive-min(24);
+  }
+
+  &__text {
+    font-size: sharedFunction.responsive-min(16);
+    line-height: sharedFunction.responsive-min(24);
+  }
+}

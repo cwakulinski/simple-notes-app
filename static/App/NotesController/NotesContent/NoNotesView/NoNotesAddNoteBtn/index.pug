@@ -1,0 +1,7 @@
+include /static/shared/Component/Ico/NewFile
+include /static/shared/Component/Button/index
+
+mixin NoNotesAddNoteBtn()
+    +ButtonSecondary()&attributes(attributes).empty-notes-add-note-btn.new-note-creator-controller__form-create-trigger
+        +NewFileIco().empty-notes-add-note-btn__new-file-ico
+        span.empty-notes-add-note-btn__text Add Note

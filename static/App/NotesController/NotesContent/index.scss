@@ -1,0 +1,48 @@
+@use "@Shared/scss/function" as sharedFunction;
+@use "@Shared/scss/var" as sharedVar;
+
+@use './NoNotesView/index' as _NoNotesView;
+@use 'NotesView/index' as _NotesManager;
+
+.notes-content {
+  $scrollbarWidthPx: 12;
+  $scrollbarThumbWidthPx: 6;
+
+  display: flex;
+  flex-direction: column;
+  gap: sharedFunction.responsive-min(24);
+  overflow-x: auto;
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+  scrollbar-color: #1B1C1E85 transparent;
+
+  padding-right: sharedFunction.responsive-min($scrollbarWidthPx);
+  width: calc(100% + sharedFunction.responsive-min($scrollbarWidthPx));
+
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+
+  @supports selector(::-webkit-scrollbar-thumb) {
+    padding-right: sharedFunction.responsive-min($scrollbarWidthPx - $scrollbarThumbWidthPx);
+    scrollbar-width: unset;
+    scrollbar-color: unset;
+
+    &::-webkit-scrollbar {
+      width: sharedFunction.responsive-min($scrollbarThumbWidthPx);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #1B1C1E85;
+      border-radius: sharedFunction.responsive-min(12);
+    }
+
+  }
+  &:not(&[view="empty"]) &__empty-content-view {
+    display: none;
+  }
+
+  &:not(&[view="std"]) &__std-content-view {
+    display: none;
+  }
+}

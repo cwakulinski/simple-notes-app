@@ -1,0 +1,7 @@
+include /static/shared/Component/Ico/MagnifyingGlass.pug
+include /static/shared/Component/Input/index.pug
+
+mixin SearchBar()
+    div&attributes(attributes).search-bar.search-bar-controller__root
+        +MagnifyingGlassIco().search-bar__magnifying-glass-ico
+        +Input()(placeholder="Search notes...").search-bar__query-input.search-bar-controller__query-input

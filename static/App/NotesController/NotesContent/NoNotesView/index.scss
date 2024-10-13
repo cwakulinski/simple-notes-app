@@ -1,0 +1,22 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use './NoNotesAddNoteBtn/index' as _AddNoteBtn;
+@use './NoNotesInfoBlock/index' as _InfoBlock;
+
+.no-notes-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: sharedFunction.responsive-min(24);
+
+  padding: sharedFunction.responsive-min(36) sharedFunction.responsive-min(20.5);
+
+  &__info {
+    width: sharedFunction.responsive-min(303);
+  }
+
+  &__add-note-btn {
+    width: sharedFunction.responsive-min(137);
+  }
+}

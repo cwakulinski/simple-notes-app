@@ -1,0 +1,7 @@
+include ./SearchBar/index
+include ./NotesContent/index
+
+mixin NotesController()
+    main&attributes(attributes).notes-controller
+        +SearchBar().notes-controller__search-bar
+        +NotesContent().notes-controller__content

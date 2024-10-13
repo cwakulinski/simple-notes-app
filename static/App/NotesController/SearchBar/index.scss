@@ -1,0 +1,27 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Input/index';
+
+.search-bar {
+  position: relative;
+
+  &__magnifying-glass-ico {
+    width: sharedFunction.responsive-min(24);
+
+    position: absolute;
+    left: sharedFunction.responsive-min(12);
+
+    /* Vertically centered no matter the parent height */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__query-input {
+    width: 100%;
+    height: sharedFunction.responsive-min(40);
+
+    box-sizing: border-box;
+    padding-left: sharedFunction.responsive-min(48);
+
+  }
+}

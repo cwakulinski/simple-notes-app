@@ -1,0 +1,15 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use "./NoNotesTextBlock/index" as _NoNotesTextBlock;
+
+.no-notes-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: sharedFunction.responsive-min(16);
+
+  &__info-ico {
+    width: sharedFunction.responsive-min(64);
+  }
+}
