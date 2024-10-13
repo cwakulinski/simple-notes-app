@@ -1,0 +1,21 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+.header {
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+
+  gap: sharedFunction.responsive-min(8);
+
+  &__note-ico {
+    width: sharedFunction.responsive-min(30);
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: 500;
+
+    font-size: sharedFunction.responsive-min(20);
+  }
+}
