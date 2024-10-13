@@ -1,0 +1,1 @@
+import '@Static/index.scss';

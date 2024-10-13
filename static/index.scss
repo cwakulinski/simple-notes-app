@@ -1,0 +1,17 @@
+/* Globals here  */
+
+/* Could just download the font and static include it into the project, but this will do for presentation peeresses */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+
+  width: 100dvw;
+  height: 100dvh;
+}
+
+body, textarea {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
