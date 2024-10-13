@@ -1,0 +1,8 @@
+include /static/shared/Component/Ico/InfoCircle
+
+include ./NoNotesTextBlock/index
+
+mixin NoNotesInfoBlock()
+    div&attributes(attributes).no-notes-info-block
+        +InfoCircleIco().no-notes-info-block__info-ico
+        +NoNotesTextBlock().no-notes-info-block__text

@@ -1,0 +1,7 @@
+include ./NoNotesView/index
+include ./NotesView/index
+
+mixin NotesContent()
+    div&attributes(attributes).notes-content
+        +NoNotesView().notes-content__empty-content-view
+        +NotesView().notes-content__std-content-view

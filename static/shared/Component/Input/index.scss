@@ -1,0 +1,23 @@
+@use "@Shared/scss/var" as shareVar;
+@use "@Shared/scss/function" as sharedFunction;
+
+.base-input {
+  background-color: #EEEFF0;
+
+  border-width: 0;
+  border-radius: sharedFunction.responsive-min(12);
+
+  font-size: sharedFunction.responsive-min(16);
+  padding: sharedFunction.responsive-min(8) sharedFunction.responsive-min(12);
+  box-sizing: border-box;
+  outline-width: 0;
+
+  &:hover {
+    background-color: #DCDEE0;
+  }
+
+  &:active, &:focus {
+    background-color: #fff;
+    outline:  #1B1C1E solid sharedFunction.responsive-min(1);
+  }
+}

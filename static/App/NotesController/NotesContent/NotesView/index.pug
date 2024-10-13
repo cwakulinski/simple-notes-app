@@ -1,0 +1,7 @@
+include ./NoteCreator/index
+include ./NotesList/index
+
+mixin NotesView()
+    div&attributes(attributes).notes-view
+        +NoteCreator().notes-view__new-entry-btn.new-note-creator-controller__form-create-trigger
+        +NotesList().notes-view__entries-list

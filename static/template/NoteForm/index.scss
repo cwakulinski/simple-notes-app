@@ -1,0 +1,38 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Button/index' as _Button;
+
+@use './Header/index' as _Header;
+@use './Fields/index' as _Fields;
+
+.note-form {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: sharedFunction.responsive-min(142);
+
+  display: flex;
+  flex-direction: column;
+  gap: sharedFunction.responsive-min(16);
+
+  background-color: #fff;
+
+  box-sizing: border-box;
+  padding: sharedFunction.responsive-min(20) sharedFunction.responsive-min(16);
+
+  box-shadow: 0 0 sharedFunction.responsive-min(16) 0 #00000014;
+
+
+  &__inject-target {
+    position: relative;
+  }
+
+  &__fields {
+
+  }
+
+  &__submit-btn {
+    margin-left: auto;
+  }
+}

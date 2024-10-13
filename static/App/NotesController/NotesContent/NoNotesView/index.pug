@@ -1,0 +1,7 @@
+include ./NoNotesAddNoteBtn/index
+include ./NoNotesInfoBlock/index
+
+mixin NoNotesView()
+    div&attributes(attributes).no-notes-view
+        +NoNotesInfoBlock().no-notes-view__info
+        +NoNotesAddNoteBtn().no-notes-view__add-note-btn

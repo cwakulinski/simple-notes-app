@@ -1,0 +1,9 @@
+include /static/shared/Component/Button/index
+
+include ./Header/index
+include ./Fields/index
+
+form.note-form
+    +NoteFormHeader().note-form__header
+    +NoteFormFields().note-form__fields
+    +ButtonPrimiary(type="submit").note-form__submit-btn Save

@@ -1,0 +1,7 @@
+include /static/shared/Component/Button/index
+
+
+mixin NoteDeleteConfirmModalUtils()
+    div&attributes(attributes).note-delete-modal-utils
+        +ButtonSecondary().note-delete-modal-utils__btn.note-delete-modal-utils__cancel-btn.note-delete-modal-controller__cancel-trigger Cancel
+        +ButtonPrimiary().note-delete-modal-utils__btn.note-delete-modal-utils__confirm-btn.note-delete-modal-controller__confirm-trigger Delete

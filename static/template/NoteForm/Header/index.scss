@@ -1,0 +1,21 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Button/index' as _Button;
+
+.note-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__title {
+    margin: 0;
+    font-size: sharedFunction.responsive-min(16);
+  }
+
+  &__close-btn {
+    font-size: sharedFunction.responsive-min(14);
+  }
+
+
+}

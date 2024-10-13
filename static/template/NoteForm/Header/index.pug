@@ -1,0 +1,6 @@
+include /static/shared/Component/Button/index
+
+mixin NoteFormHeader()
+    header&attributes(attributes).note-form-header
+        h4.note-form-header__title.note-form-view__title-text
+        +ButtonLink(type="button").note-form-header__close-btn.note-form-view__note-close-trigger Cancel
