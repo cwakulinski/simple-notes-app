@@ -1,0 +1,60 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Input/index' as _Input;
+@use '@Shared/Component/Textarea/index' as _Textarea;
+@use '@Shared/Component/Button/index' as _Button;
+
+.note-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: sharedFunction.responsive-min(12);
+
+  padding: sharedFunction.responsive-min(12);
+  border-radius: sharedFunction.responsive-min(12);
+
+  box-shadow: 0 sharedFunction.responsive-min(4) sharedFunction.responsive-min(16) 0 #00000012;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    line-height: sharedFunction.responsive-min(24);
+  }
+
+  &__title {
+    color: #1B1C1E;
+    font-weight: 500;
+    margin: 0;
+
+    font-size: sharedFunction.responsive-min(14);
+  }
+
+  &__utils {
+    display: flex;
+    align-items: center;
+
+    gap: sharedFunction.responsive-min(8);
+  }
+
+  &__text-content {
+    color: #3B3C3E;
+    margin: 0;
+
+    font-size: sharedFunction.responsive-min(14);
+    line-height: sharedFunction.responsive-min(24);
+  }
+
+  &__creation-date {
+    color: #5B5C5E;
+    margin: 0;
+
+    font-size: sharedFunction.responsive-min(12);
+    line-height: sharedFunction.responsive-min(16);
+  }
+
+  &__ico {
+    cursor: pointer;
+    width: sharedFunction.responsive-min(20);
+  }
+}

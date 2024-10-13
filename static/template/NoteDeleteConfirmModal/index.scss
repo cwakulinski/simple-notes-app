@@ -1,0 +1,50 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use "./Utils/index";
+
+.note-delete-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #0000004D;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inject-target {
+    position: relative;
+  }
+
+  &__content {
+    background-color: #FFFFFF;
+    padding: sharedFunction.responsive-min(24);
+    border-radius: sharedFunction.responsive-min(16);
+
+    display: flex;
+    flex-direction: column;
+    gap: sharedFunction.responsive-min(24);
+
+    box-sizing: border-box;
+    width: sharedFunction.responsive-min(344);
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+
+    font-size: sharedFunction.responsive-min(20);
+    line-height: sharedFunction.responsive-min(30);
+  }
+
+  &__confirmation-info {
+    margin: 0;
+
+    font-size: sharedFunction.responsive-min(16);
+    line-height: sharedFunction.responsive-min(25.6);
+  }
+}

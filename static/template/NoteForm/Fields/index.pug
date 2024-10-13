@@ -1,0 +1,7 @@
+include /static/shared/Component/Input/index
+include /static/shared/Component/Textarea/index
+
+mixin NoteFormFields()
+    fieldset&attributes(attributes).note-form-fields
+        +Input()(type="text" name="title" placeholder="Note title").note-form-fields__title-input.note-form-view__note-title-input
+        +Textarea()(name="content" placeholder="Your note").note-form-fields__content-textarea.note-form-view__note-content-input

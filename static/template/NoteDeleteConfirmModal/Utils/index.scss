@@ -1,0 +1,16 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+
+
+.note-delete-modal-utils {
+  display: flex;
+  gap: sharedFunction.responsive-min(16);
+
+  &__btn {
+    width: sharedFunction.responsive-min(140);
+    height: sharedFunction.responsive-min(40);
+
+    font-size: sharedFunction.responsive-min(16);
+    line-height: sharedFunction.responsive-min(24);
+  }
+}

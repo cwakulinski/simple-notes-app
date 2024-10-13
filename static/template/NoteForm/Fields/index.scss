@@ -1,0 +1,21 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+@use '@Shared/Component/Input/index' as _Input;
+@use '@Shared/Component/Textarea/index' as _Textarea;
+@use '@Shared/Component/Button/index' as _Button;
+
+.note-form-fields {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: sharedFunction.responsive-min(16);
+
+  &__content-textarea {
+    resize: vertical;
+    height: sharedFunction.responsive-min(210);
+  }
+}
