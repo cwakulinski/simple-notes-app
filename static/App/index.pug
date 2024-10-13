@@ -1,0 +1,8 @@
+include ./Header/index
+include ./NotesController/index
+
+mixin App()
+    .app&attributes(attributes).note-delete-modal-controller__inject-target
+        .app__content.note-form__inject-target
+            +Header().app__header
+            +NotesController().app__notes-controller

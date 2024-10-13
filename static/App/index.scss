@@ -1,0 +1,35 @@
+@use "@Shared/scss/var" as shareVar;
+@use "@Shared/scss/function" as sharedFunction;
+
+@use './Header/index' as _HeaderStyles;
+@use './NotesController/index' as _NotesControllerStyles;
+
+.app {
+
+  display: flex;
+  justify-content: center;
+
+  height: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    gap: sharedFunction.responsive-min(24);
+    padding: sharedFunction.responsive-min(16);
+    width: sharedFunction.responsive-min(shareVar.$projectContentWithPx);
+  }
+
+  &__header {
+    height: sharedFunction.responsive-min(38);
+    width: 100%;
+
+    flex-shrink: 0;
+  }
+
+  &__notes-controller {
+    min-height: 0;
+  }
+}
