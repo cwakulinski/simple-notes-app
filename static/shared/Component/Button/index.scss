@@ -1,0 +1,54 @@
+@use "@Shared/scss/function" as sharedFunction;
+
+.base-button {
+  font-weight: 500;
+
+  line-height: sharedFunction.responsive-min(24);
+  padding: sharedFunction.responsive-min(8) sharedFunction.responsive-min(16);
+  border-radius: sharedFunction.responsive-min(12);
+  font-size: sharedFunction.responsive-min(16);
+
+  cursor: pointer;
+
+  &--primary {
+    color: #fff;
+    background-color: #6B3C9B;
+    border: 0;
+
+    &:hover {
+      background-color: #844DBA;
+    }
+
+    &:active {
+      background-color: #5B2F87;
+    }
+  }
+
+  &--secondary {
+    border: sharedFunction.responsive-min(1) solid #BCBCBD;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #E7E7E7;
+    }
+
+    &:active {
+      background-color: #BDBDBD;
+      border-color: #BDBDBD;
+    }
+  }
+
+  &--link {
+    font-weight: 400;
+
+    border: 0;
+    background-color: #fff;
+
+    color: #0F75B8;
+
+    &:hover {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}

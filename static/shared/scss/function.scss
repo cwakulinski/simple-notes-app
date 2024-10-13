@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use "./var" as sharedVar;
+
+@function responsive-px-to-vw($px, $screenWith: sharedVar.$projectContentWithPx) {
+  $value: (100 * math.div($px, $screenWith));
+
+  @return $value * 1vw;
+}
+
+@function responsive-min($px, $screenWith: sharedVar.$projectContentWithPx) {
+  // Calculate the vw equivalent
+  $vwValue: responsive-px-to-vw($px, $screenWith);
+
+  // Return the correct CSS string for min()
+  @return min(#{$px}px, #{$vwValue});
+}

@@ -1,0 +1,16 @@
+mixin ButtonPrimiary()
+    +ButtonBase()&attributes(attributes).base-button--primary
+        block
+
+mixin ButtonSecondary()
+    +ButtonBase()&attributes(attributes).base-button--secondary
+        block
+
+mixin ButtonLink()
+    +ButtonBase()&attributes(attributes).base-button--link
+        block
+
+
+mixin ButtonBase()
+    button&attributes(attributes).base-button
+        block
